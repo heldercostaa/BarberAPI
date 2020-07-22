@@ -1,3 +1,10 @@
+### Temporary files ###
+/temp/*
+!temp/.gitkeep
+
+/tmp/*
+!tmp/.gitkeep
+
 
 ### Node ###
 # Logs

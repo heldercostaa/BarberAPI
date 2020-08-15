@@ -1,12 +1,13 @@
 {
-  "name": "go-barber-server-draft",
+  "name": "go-barber-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev --inspect --ignore node_modules --transpile-only src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\""
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",
@@ -31,6 +32,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5",
     "ts-node-dev": "^1.0.0-pre.52",

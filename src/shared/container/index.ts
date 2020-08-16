@@ -11,4 +11,7 @@ container.registerSingleton<IAppointmentsRepository>(
   AppointmentsRepository,
 );
 
-container.registerSingleton<IUsersRepository>('', UsersRepository);
+container.registerSingleton<IUsersRepository>(
+  'UsersRepository',
+  UsersRepository,
+);

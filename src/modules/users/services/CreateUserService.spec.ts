@@ -8,6 +8,7 @@ describe('CreateUser', () => {
   it('should be able to create a new user', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
+
     const createUser = new CreateUserService(
       fakeUsersRepository,
       fakeHashProvider,
@@ -25,6 +26,7 @@ describe('CreateUser', () => {
   it('should not be able to create an user with email already taken', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
+
     const createUser = new CreateUserService(
       fakeUsersRepository,
       fakeHashProvider,
